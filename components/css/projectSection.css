@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  }
+  
+  
+  .ProjectSectionBody {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+  }
+  
+  .projects-section {
+    padding: 50px 10%;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .ProjectSectiontTitle {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card img {
+    height: 15rem;
+    width: 15rem;
+    object-fit: contain;
+  }
+  
+  .project-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+    background: #008080;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-title {
+    font-size: 1.6rem;
+    color: #F0F0F0;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4e54c8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background: #ffffff;
+    color: #4e54c8;
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .project-title {
+      font-size: 1.4rem;
+    }
+  
+    .project-description {
+      font-size: 0.95rem;
+    }
+  
+    .project-link {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  font-family: "montserrat";
+}
+
+h1 {
+    color: white;
+}

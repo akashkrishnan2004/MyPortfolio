@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  }
+  
+  .about-section {
+    padding: 50px 10%;
+    /* background: linear-gradient(135deg, #4e54c8, #8f94fb); */
+    text-align: center;
+    font-family: "montserrat";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* About Text Section */
+  .about-text {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-text .aboutHead1 {
+    font-size: 2.5rem;
+    /* color: #4e54c8; */
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .about-text .aboutPara1 {
+    font-size: 1.1rem;
+    /* color: #333; */
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* About Skills Section */
+  .about-skills {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-skills h2 {
+    font-size: 2rem;
+    color: #4e54c8;
+    margin-bottom: 15px;
+  }
+  
+  .about-skills ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-skills li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-text h1 {
+      font-size: 2rem;
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+    }
+  
+    .about-skills h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-skills li {
+      font-size: 0.95rem;
+    }
+  }
+  

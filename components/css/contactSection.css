@@ -1,0 +1,132 @@
+/* Contact Section */
+.contact-section {
+    padding: 50px 10%;
+    height: 100vh;
+    padding-top: 15rem;
+    color: #ffffff;
+    text-align: center;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #f8f9fa;
+    line-height: 1.6;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    width: 100%;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    box-shadow: 0 4px 10px rgba(78, 84, 200, 0.5);
+  }
+  
+  .form-textarea {
+    resize: none;
+  }
+  
+  .form-submit {
+    padding: 15px 20px;
+    background: #ffffff;
+    color: #4e54c8;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .form-submit:hover {
+    background: #4e54c8;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Social Icons Section */
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-link {
+    color: #ffffff;
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-link:hover {
+    /* color: #4e54c8; */
+    color: #ffd700;
+    transform: scale(1.2);
+  }
+  
+  /*  */
+  /* .response-message {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .response-message.success {
+    color: green;
+  }
+  
+  .response-message.error {
+    color: red;
+  } */
+  
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-description {
+      font-size: 1rem;
+    }
+  
+    .form-submit {
+      font-size: 1rem;
+    }
+  }
+  
