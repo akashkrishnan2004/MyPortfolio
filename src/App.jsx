@@ -8,6 +8,7 @@ import ProjectSection from "../components/projectSection";
 import SkillsSection from "../components/skillSection";
 import ContactSection from "../components/contactSection";
 import FooterSection from "../components/footerSection";
+import FluidCursor from "../components/cursor";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <SkillsSection />
       <ContactSection />
       <FooterSection />
+      <FluidCursor />
     </div>
   );
 }
