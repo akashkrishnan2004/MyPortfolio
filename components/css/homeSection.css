@@ -111,7 +111,6 @@ h1 {
   }
 }
 
-
 .cta-button:hover {
   transform: scale(1.1);
   background: #ffe135;
@@ -140,8 +139,6 @@ h1 {
   border: 5px solid #ffd700;
   object-fit: cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  /* background: linear-gradient(135deg, #43cea2, #185a9d); */
-  /* background: #ffd700; */
 }
 
 .home-section .content .text-section h1:hover,
