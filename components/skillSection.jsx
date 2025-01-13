@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useEffect, useState } from "react";
 import "./css/skillSection.css";
 
 const skills = [
@@ -14,14 +15,37 @@ const skills = [
   { id: 10, name: "Bootstrap", icon: "⚡" },
 ];
 
-function SkillsSection  ()  {
+function SkillsSection() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const section = document.getElementById("skills");
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (section) observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="skills-section" id="skills">
-      <div className="skills-container">
+      <div className={`skills-container ${isVisible ? "visible" : ""}`}>
         <h1 className="skillSectionTitle">My Skills</h1>
         <div className="skills-grid">
           {skills.map((skill) => (
-            <div className="skill-card" key={skill.id}>
+            <div
+              className={`skill-card ${isVisible ? "animate" : ""}`}
+              key={skill.id}
+            >
               <div className="skill-icon">{skill.icon}</div>
               <h3 className="skill-name">{skill.name}</h3>
             </div>
@@ -30,6 +54,6 @@ function SkillsSection  ()  {
       </div>
     </section>
   );
-};
+}
 
 export default SkillsSection;
