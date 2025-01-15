@@ -1,5 +1,6 @@
-// import { useState } from "react";
 import "./App.css";
+
+import { Toaster } from "react-hot-toast";
 
 import NavbarSection from "../components/navBarSection";
 import HomeSection from "../components/homeSection";
@@ -13,6 +14,7 @@ import FluidCursor from "../components/cursor";
 function App() {
   return (
     <div>
+      <Toaster />
       <NavbarSection />
       <HomeSection />
       <AboutSection />

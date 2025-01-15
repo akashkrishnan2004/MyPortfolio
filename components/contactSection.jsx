@@ -23,13 +23,13 @@ function ContactForm() {
 
     try {
       await addDoc(ref, data);
-      alert("Message sent successfully!");
+      toast.success("Message sent successfully!");
       nameRef.current.value = "";
       emailRef.current.value = "";
       messageRef.current.value = "";
     } catch (error) {
       console.error("Error saving message:", error);
-      alert("Failed to send the message. Please try again.");
+      toast.error("Failed to send the message. Please try again.");
     }
   };
 
