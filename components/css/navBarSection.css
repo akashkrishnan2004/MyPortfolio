@@ -33,11 +33,11 @@
   background: linear-gradient(135deg, #43cea2, #185a9d);
   height: 5rem;
   color: white;
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000; */
   box-shadow: 0 2px 5px #43cea2;
 }
 
