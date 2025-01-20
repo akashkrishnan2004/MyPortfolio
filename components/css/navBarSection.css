@@ -1,7 +1,7 @@
 
 @font-face {
-  font-family: "font";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  font-family: "Montserrat";
+  src: url("../fonts/Poppins/Poppins-ExtraLightItalic.ttf");
 }
 
 * {
@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-.navbar {
+/* .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,12 +22,30 @@
   height: 5rem;
   color: white;
   font-family: "font";
+} */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  padding-top: 1rem;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  height: 5rem;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px #43cea2;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #ffd700;
+  font-family: "Montserrat";
 }
 
 .nav-links {
@@ -145,7 +163,6 @@
     z-index: 1000;
   }
 
-  /* Animation for the slide-in effect */
   @keyframes slideIn {
     from {
       opacity: 0;

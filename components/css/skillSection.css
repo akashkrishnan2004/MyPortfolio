@@ -1,4 +1,4 @@
-.skills-section {
+ .skills-section {
   padding: 50px 20px;
   color: white;
   text-align: center;
@@ -91,7 +91,6 @@
   animation: fadeIn 0.8s ease-out;
 }
 
-/* Staggered animation for cards */
 .skill-card:nth-child(1) {
   animation-delay: 0.2s;
 }
@@ -123,7 +122,6 @@
   animation-delay: 2s;
 }
 
-/* Keyframes for animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -146,7 +144,7 @@
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .skillSectionTitle {
     font-size: 2rem;
