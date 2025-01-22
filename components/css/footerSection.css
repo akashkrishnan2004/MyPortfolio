@@ -30,14 +30,14 @@
   }
   
   .footer-link:hover {
-    color: #ffc857; /* Gold accent on hover */
+    color: #ffc857;
     transform: scale(1.2);
   }
   
   .footer-copyright {
     font-size: 0.9rem;
     margin-top: 10px;
-    color: #e0e0e0; /* Light gray text */
+    color: #e0e0e0;
   }
   
   /* Responsive Design */
