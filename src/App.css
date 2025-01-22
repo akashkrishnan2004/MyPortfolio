@@ -3,11 +3,13 @@
   src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 
+* {
+  scrollbar-width: none;
+}
+
 body {
   background: linear-gradient(135deg, #43cea2, #185a9d);
   font-family: "montserrat";
-  /* overscroll-behavior-x: none; */
-  overscroll-behavior-y: none;
 }
 
 h1 {

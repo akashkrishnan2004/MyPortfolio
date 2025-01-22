@@ -2,7 +2,7 @@
 .contact-section {
   padding: 10%;
   height: 100vh;
-  padding-top: 15rem;
+  /* padding-top: 15rem; */
   color: #ffffff;
   text-align: center;
   display: flex;
@@ -172,7 +172,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding-bottom: 10rem;
+  /* padding-bottom: 5rem; */
 }
 
 .social-icon {
