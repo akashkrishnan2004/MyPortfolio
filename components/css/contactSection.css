@@ -77,7 +77,6 @@
 .form-input::placeholder,
 .form-textarea::placeholder {
   color: white;
-  /* color: black; */
 }
 
 .form-input:focus,
@@ -88,7 +87,6 @@
   background-color: #fff;
   
 }
-
 
 .form-submit {
   padding: 15px 20px;

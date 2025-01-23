@@ -85,7 +85,7 @@ function ContactForm() {
               className="social-icon github"
               aria-label="GitHub"
             >
-              <i className="fab fa-github"></i>
+              <i className="fab fa-github "></i>
             </a>
             {/* <a
               href="https://facebook.com/your-username"
