@@ -33,7 +33,7 @@ function NavbarSection() {
           <button
             className="mobile-menu-icon"
             onClick={() => {
-              console.log("Button clicked"); // Debugging log
+              console.log("Button clicked");
               setIsMobile(!isMobile);
             }}
           >

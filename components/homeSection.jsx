@@ -9,7 +9,7 @@ function HomeSection() {
   }, []);
 
   return (
-    <div className="homeSectionBody">
+    <div className="homeSectionBody" id="home">
       <section className="home-section">
         <div className="content">
           <div className="text-section">

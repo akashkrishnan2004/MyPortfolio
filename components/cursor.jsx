@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from "react";
-import "./css/cursor.css"; // Add styles for the cursor
+import "./css/cursor.css";
 
 const FluidCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
