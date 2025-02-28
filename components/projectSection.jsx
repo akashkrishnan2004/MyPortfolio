@@ -1,7 +1,5 @@
-
 import React from "react";
 import "./css/projectSection.css";
-
 import exam from "./images/exam_portal_img.png";
 import youtube from "./images/youtube_img.png";
 

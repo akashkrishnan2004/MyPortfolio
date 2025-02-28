@@ -1,10 +1,26 @@
-
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./css/aboutSection.css";
 
 function AboutSection() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const section = document.getElementById("about");
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (section) observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="about-section" id="about">
+    <section className={`about-section ${isVisible ? "visible" : ""}`} id="about">
       <div className="about-container">
         <div className="about-text">
           <h1 className="aboutHead1">About Me</h1>

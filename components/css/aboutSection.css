@@ -1,155 +1,91 @@
-
-@font-face {
-  font-family: "montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
-}
-
 .about-section {
-  padding: 50px 10%;
+  color: #e0e0e0;
+  padding: 80px 20px;
   text-align: center;
-  font-family: "montserrat";
-  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  animation: fadeIn 1s ease-out;
+  align-items: center;
 }
 
 .about-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  animation: slideUp 1.2s ease-out;
-}
-
-/* About Text Section */
-.about-text {
   max-width: 800px;
-  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.about-text .aboutHead1 {
+.about-section.visible .about-container {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aboutHead1 {
   font-size: 2.5rem;
-  color: white;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
+  font-weight: bold;
+  color: #00adb5;
+  margin-bottom: 15px;
 }
 
-.about-text .aboutHead1::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 4px;
-  background: #ffd700;
-  border-radius: 2px;
-  animation: expandLine 1.5s ease-in-out infinite alternate;
-}
-
-.about-text .aboutPara1 {
+.aboutPara1 {
   font-size: 1.1rem;
-  color: white;
   line-height: 1.6;
-  margin-bottom: 30px;
-  animation: fadeInText 1.5s ease-out;
+  color: #b0b0b0;
+  margin-bottom: 20px;
 }
 
-/* Call-to-action button */
 .aboutCtaButton {
   display: inline-block;
   padding: 12px 20px;
-  background: #ffd700;
-  color: white;
-  text-transform: uppercase;
+  font-size: 1.1rem;
   font-weight: bold;
-  border-radius: 1rem;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.aboutCtaButton::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  transition: left 0.5s ease;
-  z-index: 1;
-}
-
-.aboutCtaButton:hover::before {
-  left: 100%;
+  color: #121212;
+  background: #00adb5;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .aboutCtaButton:hover {
-  transform: scale(1.1);
-  background: linear-gradient(135deg, #185a9d, #43cea2);
-  /* background: #ffd700; */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  background: #00fff5;
+  transform: scale(1.05);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .about-text h1 {
+  .about-container {
+    padding: 30px;
+  }
+
+  .aboutHead1 {
     font-size: 2rem;
   }
 
-  .about-text p {
+  .aboutPara1 {
     font-size: 1rem;
   }
 
   .aboutCtaButton {
-    padding: 10px 15px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding: 10px 18px;
   }
 }
 
-/* Keyframes for animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+@media (max-width: 480px) {
+  .aboutHead1 {
+    font-size: 1.8rem;
   }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes slideUp {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
+  .aboutPara1 {
+    font-size: 0.95rem;
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
-  }
-  to {
-    text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700;
-  }
-}
-
-@keyframes fadeInText {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .aboutCtaButton {
+    font-size: 0.95rem;
+    padding: 10px 16px;
   }
 }

@@ -1,275 +1,142 @@
-@font-face {
-  font-family: "poppins";
-  src: url("../fonts/Poppins/Poppins-Regular.ttf");
-}
-
-.homeSectionBody,
-h1,
-p,
-a,
-img {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.home-section {
+.homeSectionBody {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  color: #fff;
+  align-items: center;
+  min-height: 100vh;
+  color: #e0e0e0;
+  padding: 50px 20px;
   text-align: center;
-  padding: 20px;
-  font-family: "poppins";
+  overflow: hidden;
 }
 
-.content {
+.homeSectionBody.start-animation {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.home-section .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .text-section {
   flex: 1;
-  margin-right: 20px;
+  text-align: left;
+  padding-right: 40px;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.text-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00adb5;
 }
 
 .name {
-  color: #ffd700;
-  font-weight: bold;
+  color: #00fff5;
 }
 
 .homeSectionBodyTagline {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-  text-align: left;
-  opacity: 0;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #b0b0b0;
 }
 
 .homeSectionButtons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  opacity: 0;
+  margin-top: 20px;
 }
 
 .cta-button {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #4e54c8;
-  background: #ffd700;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  text-decoration: none;
+  margin: 10px 10px 0;
+  padding: 12px 20px;
+  font-size: 1.1rem;
   font-weight: bold;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease, background 0.3s ease;
-  z-index: 0;
-}
-
-.cta-button::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 215, 0, 0.8),
-    rgba(255, 255, 0, 0.4),
-    rgba(255, 215, 0, 0.8)
-  );
-  border-radius: 10px;
-  z-index: -1;
-  animation: pulseEffect 1.5s infinite ease-in-out;
-}
-
-/* Keyframes for the glowing pulse effect */
-@keyframes pulseEffect {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.9);
-    opacity: 0.8;
-  }
+  color: #121212;
+  background: #00adb5;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .cta-button:hover {
-  transform: scale(1.1);
-  background: #ffe135;
-}
-
-@keyframes lightEffect {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+  background: #00fff5;
+  transform: scale(1.05);
 }
 
 .image-section {
-  flex: 1;
+  flex: 0.8;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .profile-image {
-  width: 400px;
-  height: 400px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
-  border: 5px solid #ffd700;
   object-fit: cover;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 5px solid #00fff5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
 }
 
-.home-section .content .text-section h1:hover,
-.home-section .content .text-section .tagline:hover,
-.home-section .content .text-section .cta-button:hover,
-.home-section .content .image-section .profile-image:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-.home-section .content .text-section h1:hover {
-  color: #3498db;
-}
-
-.home-section .content .text-section .tagline:hover {
-  color: #3498db;
-}
-
-.home-section .content .text-section .cta-button:hover {
-  background-color: #3498db;
-  color: #fff;
-}
-
-.home-section .content .image-section .profile-image {
-  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-}
-
-.home-section .content .image-section .profile-image:hover {
+.profile-image:hover {
   transform: scale(1.2) rotate(-5deg);
   filter: brightness(1.1) contrast(1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.start-animation .text-section h1 {
-  animation: slideIn 1s ease-in-out forwards;
-}
-
-.start-animation .text-section .homeSectionBodyTagline {
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-.start-animation .homeSectionButtons {
-  animation: fadeIn 2s ease-in-out forwards;
-}
-.animated-heading {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  opacity: 0;
-}
-
-.start-animation .animated-heading {
-  animation: slideIn 1s ease-in-out forwards;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .content {
+@media (max-width: 900px) {
+  .home-section .content {
     flex-direction: column;
+    text-align: center;
+    padding: 30px;
   }
 
   .text-section {
+    padding-right: 0;
     margin-bottom: 20px;
-    margin-right: 0;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  .homeSectionBodyTagline {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  .profile-image {
-    width: 250px;
-    height: 250px;
-  }
-
-  .homeSectionButtons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  .homeSectionBodyTagline {
-    font-size: 1.4rem;
-    text-align: center;
   }
 
   .profile-image {
     width: 200px;
     height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-section h1 {
+    font-size: 2rem;
+  }
+
+  .homeSectionBodyTagline {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
   }
 }

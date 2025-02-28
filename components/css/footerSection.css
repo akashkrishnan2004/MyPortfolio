@@ -1,54 +1,60 @@
-/* Footer Styles */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
 .portfolio-footer {
-    background: linear-gradient(135deg, #43cea2, #185a9d);
-    background-color: red;
-    color: #ffffff;
-    padding: 20px 10%;
-    text-align: center;
-  }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.footer-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-name:hover {
+  /* color: #ffd700; */
+  color: #088e95;
+}
+
+.footer-copyright {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.footer-name,
+.footer-copyright {
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-name:hover,
+.footer-copyright:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #088e95, 0 0 20px #088e95;
+}
+
+@media (max-width: 768px) {
   .footer-name {
     font-size: 1.2rem;
-    margin-bottom: 10px;
   }
-  
-  .footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 10px 0;
-  }
-  
-  .footer-link {
-    color: #ffffff;
-    font-size: 1.5rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .footer-link:hover {
-    color: #ffc857;
-    transform: scale(1.2);
-  }
-  
   .footer-copyright {
     font-size: 0.9rem;
-    margin-top: 10px;
-    color: #e0e0e0;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer-social {
-      gap: 10px;
-    }
-  
-    .footer-link {
-      font-size: 1.2rem;
-    }
-  }
-  
+}

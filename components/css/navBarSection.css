@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Poppins/Poppins-ExtraLightItalic.ttf");
@@ -12,35 +11,24 @@
   box-sizing: border-box;
 }
 
-/* .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 1rem;
-  padding-top: 1rem;
-  background-color: #0fc88d;
-  height: 5rem;
-  color: white;
-  font-family: "font";
-} */
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-inline: 1rem;
   padding-top: 1rem;
-  background: linear-gradient(135deg, #43cea2, #185a9d);
+  /* background: linear-gradient(135deg, rgb(22, 20, 20), #18334f); */
+  /* background: #29292B; */
+  background: #212121;
   height: 5rem;
   color: white;
-  box-shadow: 0 2px 5px #43cea2;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #ffd700;
-  font-family: "Montserrat";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-links {
@@ -65,11 +53,10 @@
 
 .nav-links a:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  color: #ffd700;
-  text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+  color: #00adb5;
+  text-shadow: 0 0 8px #088e95;
 }
 
-/* Underline animation */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -86,7 +73,6 @@
   left: 0;
 }
 
-/* Mobile Links Enhanced Hover */
 .nav-links-mobile a {
   color: #ffffff;
   font-size: 1.2rem;
@@ -97,7 +83,8 @@
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  transition: background-color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, text-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .nav-links-mobile a:hover {
@@ -147,7 +134,7 @@
     position: absolute;
     top: 60px;
     right: 20px;
-    background: linear-gradient(135deg, #43cea2, #185a9d);
+    background: linear-gradient(90deg, #000000, #0f2027, #203a43, #2c5364);
     padding: 20px;
     gap: 2rem;
     border-radius: 12px;
