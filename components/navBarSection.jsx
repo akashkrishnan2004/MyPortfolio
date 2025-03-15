@@ -8,7 +8,7 @@ function NavbarSection() {
     <div className="navBarBody">
       <div className="navBarSectionBody">
         <nav className="navbar">
-          <span className="logo">MyPortfolio</span>
+          <span className="logo">Akash Krishnan</span>
           <ul
             className={isMobile ? "nav-links-mobile" : "nav-links"}
             onClick={() => setIsMobile(false)}
