@@ -1,7 +1,9 @@
 import React from "react";
+
 import exam from "./images/exam_portal_img.png";
 import youtube from "./images/youtube_img.png";
-import weather_app from "./images/weather_app.png"
+import weather_app from "./images/weather_app.png";
+import nation_view from "./images/NationView1.png"
 
 import "./css/projectSection.css";
 
@@ -24,11 +26,19 @@ const projects = [
   },
   {
     id: 3,
+    title: "Nation View",
+    description:
+      "A responsive country explorer built with React. Features live search, region-based filtering, and detailed country pages with population, capital, languages, currencies, and more. Data is loaded from JSON and displayed in a clean, card-based UI.",
+    link: "https://github.com/akashkrishnan2004/Nation-View",
+    image: nation_view
+  },
+  {
+    id: 4,
     title: "YouTube Clone",
     description:
       "A static web page replicating the design of YouTube's interface using only HTML and CSS. This project showcases my ability to create visually appealing and responsive layouts, including elements like a navigation bar, video thumbnails, and a structured content grid, focusing on clean and functional design.",
     link: "https://github.com/akashkrishnan2004/YouTube-Clone",
-    image: youtube,
+    image: youtube
   },
 
   //
