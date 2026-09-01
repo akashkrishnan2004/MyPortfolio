@@ -230,7 +230,7 @@ function Contact() {
                 rows="5"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Tell me about your project..."
+                placeholder="Your message..."
                 maxLength={500}
                 required
                 className="w-full resize-none rounded-xl border border-white/10 bg-zinc-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-red-500/50"

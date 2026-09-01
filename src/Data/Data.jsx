@@ -292,6 +292,7 @@ export const MailId = [
 ];
 
 // Footer.jsx
+// Hero.jsx
 export const SocialLinks = [
   {
     id: 0,
