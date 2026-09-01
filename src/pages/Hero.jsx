@@ -63,8 +63,8 @@ function Hero() {
           </div>
 
           {/* Social Links */}
-          <div className="mt-10 flex items-center gap-3">
-            {SocialLinks.map((links, index) => (
+          <div className="mt-10 flex items-center gap-5">
+            {SocialLinks.slice(0, 2).map((links, index) => (
               <a
                 href={links.href}
                 aria-label={links.label}
