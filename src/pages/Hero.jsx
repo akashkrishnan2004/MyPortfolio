@@ -19,10 +19,15 @@ function Hero() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl"
         >
-          {/* Availability */}
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/5 px-4 py-2 text-sm text-zinc-300">
+          {/* Status */}
+          {/* <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/5 px-4 py-2 text-sm text-zinc-300">
             <span className="h-2 w-2 rounded-full bg-green-500" />
             Available for opportunities
+          </div> */}
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/5 px-4 py-2 text-sm text-zinc-300">
+            <span className="h-2 w-2 rounded-full bg-blue-500" />
+            {/* Open to internships & collaborations */}
+            B.Tech Student • Building & Learning
           </div>
 
           {/* Heading */}
