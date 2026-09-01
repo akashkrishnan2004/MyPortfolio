@@ -91,7 +91,7 @@ function Hero() {
             duration: 2,
             repeat: Infinity,
           }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-zinc-500"
+          className="absolute bottom-14 left-1/2 z-10 -translate-x-1/2 text-zinc-500 sm:bottom-3 md:bottom-5"
         >
           <ArrowDown size={22} />
         </motion.a>
