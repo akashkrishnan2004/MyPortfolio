@@ -32,14 +32,13 @@ import NationView from "../assets/project_images/NationView1.png";
 import {
   Code2,
   Database,
-  icons,
   Layers3,
   Mail,
   Rocket,
   Server,
   Wrench,
 } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 // Logo.jsx
 // Footer.jsx
@@ -296,20 +295,26 @@ export const MailId = [
 export const SocialLinks = [
   {
     id: 0,
-    href: "#",
+    href: "https://github.com/akashkrishnan2004",
     label: "GitHub",
     icon: <FaGithub size={18} />,
   },
   {
     id: 1,
-    href: "#",
+    href: "https://www.linkedin.com/in/akash-krishnan2004/",
     label: "LinkedIn",
     icon: <FaLinkedin size={18} />,
   },
   {
     id: 3,
-    href: "#",
+    href: "akashkrishnan806@gmail.com",
     label: "Mail",
     icon: <Mail size={18} />,
   },
+  {
+    id: 4,
+    href: "https://www.instagram.com/ak_a_sh_krishnan/",
+    label: "Instagram",
+    icon: <FaInstagram size={18} />
+  }
 ];

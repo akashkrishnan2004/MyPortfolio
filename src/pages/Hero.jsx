@@ -67,6 +67,8 @@ function Hero() {
             {SocialLinks.slice(0, 2).map((links, index) => (
               <a
                 href={links.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={links.label}
                 key={links.id}
                 className="rounded-full border border-white/10 p-3 text-zinc-500 transition hover:border-red-500/30 hover:text-white"
