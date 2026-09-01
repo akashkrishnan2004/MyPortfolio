@@ -1,5 +1,4 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { SocialLinks } from "../Data/Data";
 
@@ -20,13 +19,8 @@ function Hero() {
           className="max-w-4xl"
         >
           {/* Status */}
-          {/* <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/5 px-4 py-2 text-sm text-zinc-300">
-            <span className="h-2 w-2 rounded-full bg-green-500" />
-            Available for opportunities
-          </div> */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/5 px-4 py-2 text-sm text-zinc-300">
-            <span className="h-2 w-2 rounded-full bg-blue-500" />
-            {/* Open to internships & collaborations */}
+            <span className="h-2 w-2 rounded-full bg-green-500" />
             B.Tech Student • Building & Learning
           </div>
 
@@ -69,7 +63,7 @@ function Hero() {
           </div>
 
           {/* Social Links */}
-          <div className="mt-10 flex items-center gap-4">
+          <div className="mt-10 flex items-center gap-3">
             {SocialLinks.map((links, index) => (
               <a
                 href={links.href}
