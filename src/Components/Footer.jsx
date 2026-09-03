@@ -2,7 +2,7 @@ import { ArrowUp } from "lucide-react";
 import Logo from "./Logo";
 import { SocialLinks } from "../Data/Data";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="border-t border-white/10 px-6 py-10">
       <div className="mx-auto max-w-6xl">
@@ -43,11 +43,11 @@ function Footer() {
 
         {/* Bottom */}
         <div className="mt-8 border-t border-white/10 pt-6 text-center text-xs text-zinc-600">
-          © {new Date().getFullYear()} Akash Krishnan. All rights reserved.
+          © {new Date().getFullYear()}{" "}
+          <span className="text-red-500">Akash Krishnan</span>. All rights
+          reserved.
         </div>
       </div>
     </footer>
   );
 }
-
-export default Footer;

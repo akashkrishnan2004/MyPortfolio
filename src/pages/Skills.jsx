@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { skillCategories } from "../Data/Data";
 
-function Skills() {
+export default function Skills() {
   return (
     <section id="skills" className="px-6 py-24">
       <div className="mx-auto max-w-6xl">
@@ -96,5 +96,3 @@ function Skills() {
     </section>
   );
 }
-
-export default Skills;

@@ -1,8 +1,9 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+
 import { SocialLinks } from "../Data/Data";
 
-function Hero() {
+export default function Hero() {
   return (
     <section
       id="home"
@@ -92,8 +93,11 @@ function Hero() {
           <ArrowDown size={22} />
         </motion.a>
       </div>
+
+      {/* <div className="border-2 rounded-4xl border-red-500 h-120 w-120">
+        <img src="/src/assets/images/1.png" alt="" className="h-full w-full rounded-4xl" />
+      </div> */}
     </section>
   );
 }
 
-export default Hero;

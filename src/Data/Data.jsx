@@ -22,13 +22,6 @@ import postmanLogo from "../assets/tech_logo/postman.png";
 import netlifyLogo from "../assets/tech_logo/netlify.png";
 import vercelLogo from "../assets/tech_logo/vercel.png";
 
-// Project Images
-import CinemaPeddika from "../assets/project_images/Cinema_Peedika.png";
-import MaveliNadu from "../assets/project_images/Maveli_Nadu.png";
-import ExamPortal from "../assets/project_images/exam_portal_img.png";
-import WeatherApp from "../assets/project_images/weather_app.png";
-import NationView from "../assets/project_images/NationView1.png";
-
 import {
   Code2,
   Database,
@@ -40,10 +33,21 @@ import {
 } from "lucide-react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
+// Project Images
+import CinemaPeddika from "../assets/project_images/Cinema_Peedika.png";
+import MaveliNadu from "../assets/project_images/Maveli_Nadu.png";
+import ExamPortal from "../assets/project_images/exam_portal_img.png";
+import WeatherApp from "../assets/project_images/weather_app.png";
+import NationView from "../assets/project_images/NationView1.png";
+
+// Logo Image
+import Logo from "../assets/images/1.png";
+
 // Logo.jsx
 // Footer.jsx
 export const logo = {
   title: "Akash Krishnan",
+  logo: null,
   accent: ".",
 };
 
@@ -213,7 +217,7 @@ export const projects = [
     description:
       "A responsive weather application that displays real-time weather information.",
     image: WeatherApp,
-    technologies: ["React", "API", "CSS"],
+    technologies: ["React", "API", "CSS", "Express.js", "Node.js"],
     category: "Full Stack",
     liveUrl: "#",
     githubUrl: "https://github.com/akashkrishnan2004/Weather-App-Project",
@@ -316,6 +320,6 @@ export const SocialLinks = [
     id: 4,
     href: "https://www.instagram.com/ak_a_sh_krishnan/",
     label: "Instagram",
-    icon: <FaInstagram size={18} />
-  }
+    icon: <FaInstagram size={18} />,
+  },
 ];

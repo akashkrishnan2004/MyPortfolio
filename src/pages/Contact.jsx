@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import { MailId } from "../Data/Data";
 import { db } from "../Firebase/Firebase";
 
-function Contact() {
+export default function Contact() {
   // Form state
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -274,4 +274,3 @@ function Contact() {
   );
 }
 
-export default Contact;

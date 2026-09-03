@@ -4,7 +4,7 @@ import { useState } from "react";
 import { navLinks } from "../Data/Data";
 import Logo from "./Logo";
 
-function Navbar() {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -19,7 +19,7 @@ function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm text-zinc-400 transition hover:text-white"
+              className="text-sm text-zinc-400 transition hover:text-red-500"
             >
               {link.name}
             </a>
@@ -73,5 +73,3 @@ function Navbar() {
     </header>
   );
 }
-
-export default Navbar;

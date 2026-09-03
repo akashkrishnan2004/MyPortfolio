@@ -27,7 +27,7 @@
 "use client";
 import React from "react";
 import { PinContainer } from "../Ui/3d-pin";
-import { myProjects } from "../Data/Data";
+import { projects } from "../Data/Data";
 
 export default function AnimatedPinDemo() {
   return (

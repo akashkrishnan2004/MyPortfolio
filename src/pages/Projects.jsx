@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 import { projects } from "../Data/Data";
 
-function Projects() {
+export default function Projects() {
   const [filter, setFilter] = useState("All");
 
   const categories = ["All", "Frontend", "Full Stack"];
@@ -133,5 +133,3 @@ function Projects() {
     </section>
   );
 }
-
-export default Projects;

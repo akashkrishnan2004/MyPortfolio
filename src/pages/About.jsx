@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { highlights } from "../Data/Data";
 
-function About() {
+export default function About() {
   return (
     <section id="about" className="px-6 py-24">
       <div className="mx-auto max-w-6xl">
@@ -64,4 +64,3 @@ function About() {
   );
 }
 
-export default About;

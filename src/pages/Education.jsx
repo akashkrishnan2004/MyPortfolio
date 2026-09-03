@@ -3,7 +3,7 @@ import { ArrowUpRight, GraduationCap, MapPin } from "lucide-react";
 
 import { education } from "../Data/Data";
 
-function Education() {
+export default function Education() {
   return (
     <section id="education" className="px-6 py-24">
       <div className="mx-auto max-w-6xl">
@@ -96,4 +96,3 @@ function Education() {
   );
 }
 
-export default Education;

@@ -3,7 +3,7 @@ import { ArrowUpRight, BriefcaseBusiness, MapPin } from "lucide-react";
 
 import { experience } from "../Data/Data";
 
-function Experience() {
+export default function Experience() {
   return (
     <section id="experience" className="px-6 py-24">
       <div className="mx-auto max-w-6xl">
@@ -108,4 +108,3 @@ function Experience() {
   );
 }
 
-export default Experience;
