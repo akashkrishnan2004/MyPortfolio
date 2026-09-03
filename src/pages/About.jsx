@@ -44,9 +44,9 @@ export default function About() {
                   duration: 0.5,
                   delay: index * 0.1,
                 }}
-                className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-red-500/30 hover:bg-white/[0.04]"
+                className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-cyan-500/30 hover:bg-white/[0.04]"
               >
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 text-red-500">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-500">
                   <Icon size={24} />
                 </div>
 

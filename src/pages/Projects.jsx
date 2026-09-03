@@ -25,7 +25,7 @@ export default function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-red-500">
+          <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-500">
             My Work
           </p>
 
@@ -47,7 +47,7 @@ export default function Projects() {
               onClick={() => setFilter(category)}
               className={`rounded-full px-5 py-2.5 text-sm font-medium transition ${
                 filter === category
-                  ? "bg-red-500 text-white"
+                  ? "bg-cyan-500 text-white"
                   : "border border-white/10 bg-white/[0.02] text-zinc-400 hover:text-white"
               }`}
             >
@@ -69,7 +69,7 @@ export default function Projects() {
               }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] transition-all duration-300 hover:-translate-y-1 hover:border-red-500/30"
+              className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/30"
             >
               {/* Image */}
               <div className="relative aspect-video overflow-hidden bg-zinc-900">
@@ -109,7 +109,7 @@ export default function Projects() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 rounded-full bg-red-500 px-4 py-2 text-sm font-medium transition hover:bg-red-600"
+                    className="flex items-center gap-2 rounded-full bg-cyan-500 px-4 py-2 text-sm font-medium transition hover:bg-cyan-600"
                   >
                     Live Demo
                     <ArrowUpRight size={16} />

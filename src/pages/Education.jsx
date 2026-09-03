@@ -14,7 +14,7 @@ export default function Education() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-red-500">
+          <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-500">
             Education
           </p>
 
@@ -49,16 +49,16 @@ export default function Education() {
               className="relative mb-10 last:mb-0"
             >
               {/* Timeline Dot */}
-              <div className="absolute -left-[41px] top-6 flex h-5 w-5 items-center justify-center rounded-full border-4 border-zinc-950 bg-red-500 sm:-left-[51px]">
+              <div className="absolute -left-[41px] top-6 flex h-5 w-5 items-center justify-center rounded-full border-4 border-zinc-950 bg-cyan-500 sm:-left-[51px]">
                 <span className="h-1.5 w-1.5 rounded-full bg-white" />
               </div>
 
               {/* Card */}
-              <div className="group rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-red-500/30 hover:bg-white/[0.04]">
+              <div className="group rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/30 hover:bg-white/[0.04]">
                 {/* Top */}
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <span className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-3 py-1 text-xs font-medium text-red-400">
+                    <span className="inline-flex items-center gap-2 rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-400">
                       <GraduationCap size={13} />
                       {item.year}
                     </span>
@@ -78,7 +78,7 @@ export default function Education() {
                   </div>
 
                   {/* Arrow */}
-                  <div className="hidden rounded-full border border-white/10 p-2 text-zinc-500 transition group-hover:border-red-500/30 group-hover:text-red-500 sm:block">
+                  <div className="hidden rounded-full border border-white/10 p-2 text-zinc-500 transition group-hover:border-cyan-500/30 group-hover:text-cyan-500 sm:block">
                     <ArrowUpRight size={18} />
                   </div>
                 </div>

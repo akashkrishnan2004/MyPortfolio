@@ -12,7 +12,7 @@ export default function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-red-500">
+          <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-500">
             My Skills
           </p>
 
@@ -41,11 +41,11 @@ export default function Skills() {
                   duration: 0.5,
                   delay: index * 0.1,
                 }}
-                className="group rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-red-500/30 hover:bg-white/[0.04]"
+                className="group rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/30 hover:bg-white/[0.04]"
               >
                 {/* Category Header */}
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 text-red-500 transition group-hover:bg-red-500 group-hover:text-white">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-500 transition group-hover:bg-cyan-500 group-hover:text-white">
                     <Icon size={24} />
                   </div>
 
@@ -63,7 +63,7 @@ export default function Skills() {
                   {category.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-lg border border-white/10 bg-zinc-900 px-3 py-2 text-sm text-zinc-400 transition hover:border-red-500/30 hover:text-white"
+                      className="rounded-lg border border-white/10 bg-zinc-900 px-3 py-2 text-sm text-zinc-400 transition hover:border-cyan-500/30 hover:text-white"
                     >
                       {skill}
                     </span>

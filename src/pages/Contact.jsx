@@ -83,7 +83,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-red-500">
+          <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-500">
             Get In Touch
           </p>
 
@@ -119,7 +119,7 @@ export default function Contact() {
           >
             <div className="h-full rounded-2xl border border-white/10 bg-white/[0.02] p-7">
               {/* Icon */}
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 text-red-500">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-500">
                 <Mail size={23} />
               </div>
 
@@ -138,7 +138,7 @@ export default function Contact() {
                   <a
                     href={`mailto:${data.label}`}
                     key={data.id}
-                    className="group inline-flex w-fit items-center gap-2 text-sm text-zinc-300 transition-colors duration-300 hover:text-red-500"
+                    className="group inline-flex w-fit items-center gap-2 text-sm text-zinc-300 transition-colors duration-300 hover:text-cyan-500"
                   >
                     {data.label}
 
@@ -189,7 +189,7 @@ export default function Contact() {
                 placeholder="Your name"
                 maxLength={50}
                 required
-                className="w-full rounded-xl border border-white/10 bg-zinc-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-red-500/50"
+                className="w-full rounded-xl border border-white/10 bg-zinc-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-cyan-500/50"
               />
             </div>
 
@@ -211,7 +211,7 @@ export default function Contact() {
                 placeholder="you@example.com"
                 maxLength={100}
                 required
-                className="w-full rounded-xl border border-white/10 bg-zinc-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-red-500/50"
+                className="w-full rounded-xl border border-white/10 bg-zinc-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-cyan-500/50"
               />
             </div>
 
@@ -233,7 +233,7 @@ export default function Contact() {
                 placeholder="Your message..."
                 maxLength={500}
                 required
-                className="w-full resize-none rounded-xl border border-white/10 bg-zinc-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-red-500/50"
+                className="w-full resize-none rounded-xl border border-white/10 bg-zinc-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-cyan-500/50"
               />
             </div>
 
@@ -248,7 +248,7 @@ export default function Contact() {
                   opacity: 1,
                   y: 0,
                 }}
-                className="rounded-xl border border-red-500/20 bg-red-500/10 px-4 py-3 text-sm text-red-400"
+                className="rounded-xl border border-red-500/20 bg-red-500/10 px-4 py-3 text-sm text-cyan-400"
               >
                 {error}
               </motion.div>
@@ -258,7 +258,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={submitting}
-              className="group flex items-center gap-2 rounded-full bg-red-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-red-600 disabled:cursor-not-allowed disabled:opacity-50"
+              className="group flex items-center gap-2 rounded-full bg-cyan-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-cyan-600 disabled:cursor-not-allowed disabled:opacity-50"
             >
               {submitting ? "Sending..." : "Send Message"}
 

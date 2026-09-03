@@ -25,7 +25,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label={links.label}
                 key={links.id}
-                className="rounded-full border border-white/10 p-3 text-zinc-500 transition hover:border-red-500/30 hover:text-white"
+                className="rounded-full border border-white/10 p-3 text-zinc-500 transition hover:border-cyan-500/30 hover:text-white"
               >
                 {links.icon}
               </a>
@@ -34,7 +34,7 @@ export default function Footer() {
             <a
               href="#home"
               aria-label="Back to top"
-              className="rounded-full bg-red-500 p-3 text-white transition hover:bg-red-600"
+              className="rounded-full bg-cyan-500 p-3 text-white transition hover:bg-cyan-600"
             >
               <ArrowUp size={18} />
             </a>
@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-8 border-t border-white/10 pt-6 text-center text-xs text-zinc-600">
           © {new Date().getFullYear()}{" "}
-          <span className="text-red-500">Akash Krishnan</span>. All rights
+          <span className="text-cyan-500">Akash Krishnan</span>. All rights
           reserved.
         </div>
       </div>
