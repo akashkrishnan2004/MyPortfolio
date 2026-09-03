@@ -19,7 +19,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm text-zinc-400 transition hover:text-red-500"
+              className="text-sm text-zinc-400 transition hover:text-cyan-500"
             >
               {link.name}
             </a>
@@ -29,7 +29,7 @@ export default function Navbar() {
         {/* Desktop Let's Talk */}
         <a
           href="#contact"
-          className="hidden shrink-0 rounded-full bg-red-500 px-5 py-2 text-sm font-medium text-white transition hover:bg-red-600 md:block"
+          className="hidden shrink-0 rounded-full bg-cyan-500 px-5 py-2 text-sm font-medium text-white transition hover:bg-cyan-600 md:block"
         >
           Let's Talk
         </a>
@@ -63,7 +63,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setMenuOpen(false)}
-              className="mt-2 rounded-full bg-red-500 px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-red-600"
+              className="mt-2 rounded-full bg-cyan-500 px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-cyan-600"
             >
               Let's Talk
             </a>

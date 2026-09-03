@@ -28,7 +28,7 @@ export default function Hero() {
           {/* Heading */}
           <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
             <span className="block">Hi, I'm</span>
-            <span className="block text-red-500">
+            <span className="block text-cyan-500">
               Akash Krishnan<span className="text-white">.</span>
             </span>
           </h1>
@@ -46,7 +46,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="group flex items-center gap-2 rounded-full bg-red-500 px-6 py-3 font-medium transition hover:bg-red-600"
+              className="group flex items-center gap-2 rounded-full bg-cyan-500 px-6 py-3 font-medium transition hover:bg-cyan-600"
             >
               View Projects
               <ArrowUpRight
@@ -72,7 +72,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 aria-label={links.label}
                 key={links.id}
-                className="rounded-full border border-white/10 p-3 text-zinc-500 transition hover:border-red-500/30 hover:text-white"
+                className="rounded-full border border-white/10 p-3 text-zinc-500 transition hover:border-cyan-500/30 hover:text-white"
               >
                 {links.icon}
               </a>

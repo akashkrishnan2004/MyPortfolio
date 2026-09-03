@@ -11,7 +11,7 @@ export default function Logo() {
         {/* <img src={logo.logo} alt={logo.title} className="h-10 w-10" /> */}
       </span>
 
-      <span className="text-red-500">{logo.accent}</span>
+      <span className="text-cyan-500">{logo.accent}</span>
     </a>
   );
 }

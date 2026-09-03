@@ -12,7 +12,7 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-red-500">
+          <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-500">
             About Me
           </p>
 
