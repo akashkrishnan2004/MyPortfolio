@@ -88,7 +88,7 @@ export default function Hero() {
             duration: 2,
             repeat: Infinity,
           }}
-          className="absolute bottom-14 left-1/2 z-10 -translate-x-1/2 text-zinc-500 sm:bottom-3 md:bottom-5"
+          className="absolute bottom-14 left-1/2 z-10 -translate-x-1/2 text-zinc-500 sm:bottom-3 md:bottom-5 hover:text-cyan-500"
         >
           <ArrowDown size={22} />
         </motion.a>
@@ -100,4 +100,3 @@ export default function Hero() {
     </section>
   );
 }
-

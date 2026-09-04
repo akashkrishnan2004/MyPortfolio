@@ -208,20 +208,20 @@ export const projects = [
     technologies: ["React", "Node.js", "Express.js", "MongoDB"],
     category: "Full Stack",
     liveUrl: "#",
-    githubUrl: "https://github.com/akashkrishnan2004/Online-exam-portal",
+    githubUrl: "#",
   },
 
-  {
-    id: 4,
-    title: "Weather App",
-    description:
-      "A responsive weather application that displays real-time weather information.",
-    image: WeatherApp,
-    technologies: ["React", "API", "CSS", "Express.js", "Node.js"],
-    category: "Full Stack",
-    liveUrl: "#",
-    githubUrl: "https://github.com/akashkrishnan2004/Weather-App-Project",
-  },
+  // {
+  //   id: 4,
+  //   title: "Weather App",
+  //   description:
+  //     "A responsive weather application that displays real-time weather information.",
+  //   image: WeatherApp,
+  //   technologies: ["React", "API", "CSS", "Express.js", "Node.js"],
+  //   category: "Full Stack",
+  //   liveUrl: "#",
+  //   githubUrl: "https://github.com/akashkrishnan2004/Weather-App-Project",
+  // },
 
   // {
   //   id: ,
